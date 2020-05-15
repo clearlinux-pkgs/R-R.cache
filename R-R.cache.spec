@@ -4,7 +4,7 @@
 #
 Name     : R-R.cache
 Version  : 0.14.0
-Release  : 5
+Release  : 6
 URL      : https://cran.r-project.org/src/contrib/R.cache_0.14.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/R.cache_0.14.0.tar.gz
 Summary  : Fast and Light-Weight Caching (Memoization) of Objects and
@@ -31,21 +31,22 @@ R package who needs them/created them in the first place.
 
 %prep
 %setup -q -c -n R.cache
+cd %{_builddir}/R.cache
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581640239
+export SOURCE_DATE_EPOCH=1589586595
 
 %install
-export SOURCE_DATE_EPOCH=1581640239
+export SOURCE_DATE_EPOCH=1589586595
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
