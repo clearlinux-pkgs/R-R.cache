@@ -4,7 +4,7 @@
 #
 Name     : R-R.cache
 Version  : 0.16.0
-Release  : 30
+Release  : 31
 URL      : https://cran.r-project.org/src/contrib/R.cache_0.16.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/R.cache_0.16.0.tar.gz
 Summary  : Fast and Light-Weight Caching (Memoization) of Objects and
